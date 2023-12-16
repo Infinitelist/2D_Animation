@@ -1,0 +1,569 @@
+/* Rutherford Labbe - 09/11/2023 */
+
+
+/* Import the fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Montserrat:wght@500&family=Rubik+Mono+One&display=swap');
+
+
+/* Set the main colors in use */
+:root {
+    --Sazerac: #fff5e0;
+    --Bittersweet: #ff6969;
+    --Persimmon: #FF5757;
+    --Bunting: #141E46;
+    --Rajah: #F6B868;
+    --Jade: #00BF63;
+    --RajahLight: rgba(246, 184, 104, 0.8);
+  }
+
+
+#video{
+    background-color: #00BF63;
+}
+
+
+/* Smooth scrolling for the entire page*/
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    background-color: var(--Persimmon);
+}
+
+#main_container{
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: var(--Sazerac);
+    outline: 7px solid var(--Bunting);
+
+    /*Increase every element by 10 percent */
+    height: 110%;
+
+    border-radius: 550px 550px 0 0;
+
+}
+
+main{
+    /* Center elements */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Keeps the width of all elements the same */
+    width: 50em;
+    padding: 0;
+}
+
+
+hr{
+    margin: 8px;
+    visibility: hidden;
+}
+
+.circle{
+    /* Center element*/
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    background-color: var(--Persimmon);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+    /* Center text */
+    display: grid;
+    place-items: center;
+
+    outline: 7px solid var(--Bunting);
+}
+
+.circle strong{
+    color: var(--Sazerac);
+    font-size: 1.7em;
+    font-family: "Fredoka";
+    margin-bottom: 5px;
+}
+
+.title{
+
+    /* Center element */
+    display: grid;
+    place-items: center;
+
+    /* Set the color for text*/
+    color: var(--Bunting);
+
+    font-family: "Montserrat";
+}
+
+.title strong{
+    margin-top: 5px;
+    font-size: 1.2em;
+    font-family: "Rubik";
+    font-weight: lighter;
+}
+
+/* Font for the legacy cards */
+.title_2 strong{
+    font-family: "Rubik";
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/*Divides each section into distinct parts*/
+.divider{
+
+    /*Center elements*/
+    margin-left: auto;
+    margin-right: auto;
+
+    /*Set the element dimensions*/
+    width: 100px;
+    height: 35px;
+
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--Bittersweet);
+}
+
+nav{
+
+    /*Moves the entire nav bar down*/
+    position: sticky;
+    top: 75%;
+
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+
+    /* Center elements */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* 700px to match the width of the video*/
+    width: 680px;
+    background-color: whitesmoke;
+    margin-top: 20px;
+    padding-top: 30px;
+    border-radius: 50px;
+    
+    /*First layer*/
+    z-index: 1;
+
+
+    /* Code for Glass Morphism */
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 50px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+nav div{
+    display: inline-block;
+    background-color: var(--RajahLight);
+
+    padding: 7px 7px 9px 7px;
+    margin: 0 10px;
+    border-radius: 50px;
+    /*border: 3px solid red;*/
+
+    outline: 7px solid var(--Bunting);
+
+    font-size: 18px;
+    color: var(--Bunting);
+
+}
+
+/* Targets text within the nav bar */
+nav a{
+    font-family: "Fredoka";
+}
+
+nav div:hover{
+    background-color: var(--Jade);
+}
+
+article a {
+    display: block;
+}
+
+h4{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+h4 a{
+    color: var(--Bunting);
+    text-decoration: underline;
+}
+
+h4 a:hover{
+    color: var(--Persimmon);
+}
+
+ul{
+    /*Changes style of unordered list to any type include none*/
+    list-style-type: none;
+
+    /*Removes left side padding*/
+    padding: 0;
+
+    /*Removes top margin*/
+    margin: 0;
+}
+
+
+/* Text for history section */
+li{
+
+    /* Set the text color */ 
+    color: var(--Bunting);
+
+    /* Set background of text color */
+    background-color: var(--Rajah);
+
+
+    padding: 0.5px;
+    margin: 10px 0;
+    border-radius: 6px;
+    opacity: 0.6;
+}
+
+li:hover{
+    opacity: 1;
+    outline: 5px solid var(--Bunting);
+    background-color: white;
+}
+
+li p{
+    margin-left: 12px;
+    margin-right: 1px;
+
+    font-family: "Montserrat";
+}
+
+/* Targets the years for the timeline */
+p strong{
+    font-family: "Rubik";
+}
+
+
+/*The background for the description section*/
+#description{
+
+    /*Shrinks container*/
+    width: 80%;
+    height: 80%;
+
+    /* Center elements */
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 30px;
+    background-color: var(--Sazerac);
+
+    text-align: center;
+    border-radius: 6px;
+
+    outline: 7px solid var(--Bunting);
+
+}
+
+#description h4, p{
+    color: var(--Bunting);
+}
+
+#description h4{
+    font-size: 1.2em;
+    font-family: "Rubik";
+}
+
+#description p{
+    font-family: "Montserrat";
+}
+
+#history{
+    /*Center elements*/
+    margin-left: auto;
+    margin-right: auto;
+
+    /*Shinks Unordered list*/
+    width: 80%;
+    height: 80%;
+
+    padding: 30px;
+    background-color: var(--Sazerac);
+
+    border-radius: 6px;
+    outline: 7px solid var(--Bunting);
+}
+
+.grid_item a, .grid_item p, .title_2{
+    display: grid; /* It creates a grid */
+    place-items: center; /* Place item at the center*/
+}
+
+
+.grid_item p{
+
+    color: var(--Rajah);
+    background-color: var(--Bunting);
+
+    /* Set the width and height */
+    width: 75%;
+    height: 30px;
+
+    /* Center elements */
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 8px;
+    border-radius: 50px;
+}
+
+.grid_item img{
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Allow the image to maintain its aspect ratio */
+}
+
+/*The background for Tv series and films sections*/
+.grid_container{
+
+    /* Center elements */
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid; /* It creates a grid */
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-gap: 10px; /* Gaps between the columns */
+    
+
+    /*Shrinks container*/
+    width: 80%;
+    height: 80%;
+
+    padding: 30px;
+    background-color: var(--Sazerac);
+
+    border-radius: 6px;
+    outline: 7px solid var(--Bunting);
+
+}
+
+.image_container{
+    position: relative;
+}
+
+.image_container_2{
+    position: relative;
+
+    /*Shrinks container*/
+    width: 80%;
+    height: 80%;
+
+    /* Center elements */
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 30px;
+    background-color: var(--Sazerac);
+
+    border-radius: 6px;
+    outline: 7px solid var(--Bunting);
+}
+
+/*Position tbe text over the image*/
+.overlay {
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+
+    opacity: 0;
+    transition: .5s ease-in-out;
+    
+    /* Code for Glass Morphism */
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+  
+/*Once you hover over the element the opacity goes up by half*/
+.image_container:hover .overlay,  .image_container_2:hover .overlay{
+    opacity: 1;
+}
+
+.image_container_2:hover .overlay{
+    border-radius: 7px;
+}
+
+
+.text {
+    color: var(--Bunting);
+    font-size: 40px;
+
+    /*Places text at the center of the image*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Targets the years of the legacy cards */
+.text,
+ .title_2{
+    font-family: "Montserrat";
+}
+
+.line{
+    /* Sets the dimensions of the element */
+    width: 40px;
+    height: 20px;
+
+    opacity: 0;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: var(--Bittersweet);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 360px ){
+
+    /* Removes the parent element */
+    #description{
+        display: contents;
+    }
+
+    .grid_item p{
+       font-size: xx-small;
+       background-color: var(--Sazerac);
+       color: var(--Bunting);
+       text-align: center;
+       padding-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 500px ){
+    /* Inherits the original style */
+    #description{
+        display: inherit;
+    }
+
+    .grid_item p{
+        font-size: small;
+        background-color: var(--Sazerac);
+        color: var(--Bunting);
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 700px ){
+
+    .grid_item p{
+        font-size: medium;
+        background-color: var(--Sazerac);
+        color: var(--Bunting);
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px ){
+
+    .grid_item p{
+        font-size: medium;
+        background-color: var(--Bunting);
+        color: var(--Rajah);
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    main{
+       width: 100%;
+    }
+
+    nav{
+        visibility: hidden;
+    }
+
+    #description,
+    #history{
+        width: 60%;
+    }
+
+    #history ul{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .grid_item img{
+        width: 60%;
+    }
+
+    .title strong{
+        font-size: 1em;
+    }
+
+    .title{
+        margin-bottom: 30px;
+    }
+
+    #description{
+        outline: none;
+    }
+
+    .grid_container,
+    #history{
+        display: contents;
+    }
+
+    .line{
+        opacity: 1;
+    }
+
+    /* Targets the years of the legacy cards */
+    .image_container_2{
+        width: 50%;
+        outline: none;
+        background-color: #141E46;
+    }
+
+    .image_container img{
+        width: 75%;
+    }
+
+    .image_container_2 img{
+        width: 200%;
+    }
+
+    .image_container_2 .title_2{
+        font-size: 3vw;
+    }
+
+    .image_container_2:hover .overlay{
+        opacity: 1;
+    }
+
+}
+
+
